@@ -1,4 +1,46 @@
-﻿// // ДЗ 
+﻿int [] array = {11,22,33,44,55,66,77,88,99};
+int [] result = new int [array.Length / 2];
+
+for (int i = 0, j = array.Length - 1; i < result.Length; i++, j--)
+{
+    result[i] = array [i] * array [j];
+
+}
+Console.WriteLine($"Результат: [{string.Join("; ", result)}]");
+
+
+// int [] array = {-1,-2,-3,-4,-5,0,1,2,3,4};
+// Console.WriteLine($"Массив до: [{string.Join(";", array)}]");
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] *= -1;
+// }
+// Console.WriteLine($"Массив после: [{string.Join(";", array)}]");
+
+
+// int [] array = {11,22,33,44,55,66,77,88,99};
+// int numberForSearch = 44; 
+// bool isFound = false;
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (numberForSearch == array [i])
+//     {
+//        isFound = true;
+//         break; 
+//     }
+// }
+// if (isFound) 
+// {
+//     Console.WriteLine("Да");
+// }
+// else
+// {
+//     Console.WriteLine ("Нет");
+// }
+
+
+
+// // ДЗ 
 // // Задача 1 
 // int a = 32; 
 // if (a % 7 == 0 && a % 23 == 0)
@@ -57,35 +99,35 @@
 // }
 
 
-// Задача 4 
-int N = 203; 
-if (N > 0)
-{
-    int firstDigitFromEnd = N % 10;
-    int secondDigitFromEnd = N / 10 % 10; 
-    int thirdDigitFromEnd = N / 100 % 10; 
-    int fourDigitFromEnd = N / 1000; 
-    if (N >999)
-    {
-    Console.WriteLine ($"{fourDigitFromEnd}, {thirdDigitFromEnd}, {secondDigitFromEnd}, {firstDigitFromEnd}");
-    }
-    else if (N >99 && N <1000)
-    {
-    Console.WriteLine ($"{thirdDigitFromEnd}, {secondDigitFromEnd}, {firstDigitFromEnd}");
-    }
-     else if (N >9 && N <100)
-    {
-    Console.WriteLine ($"{secondDigitFromEnd}, {firstDigitFromEnd}");
-    }
-     else if (N <=9)
-    {
-    Console.WriteLine ($"{firstDigitFromEnd}");
-    }
-}
-else 
-{
-    Console.WriteLine("Число не является натуральным");
-}
+// // Задача 4 
+// int N = 203; 
+// if (N > 0)
+// {
+//     int firstDigitFromEnd = N % 10;
+//     int secondDigitFromEnd = N / 10 % 10; 
+//     int thirdDigitFromEnd = N / 100 % 10; 
+//     int fourDigitFromEnd = N / 1000; 
+//     if (N >999)
+//     {
+//     Console.WriteLine ($"{fourDigitFromEnd}, {thirdDigitFromEnd}, {secondDigitFromEnd}, {firstDigitFromEnd}");
+//     }
+//     else if (N >99 && N <1000)
+//     {
+//     Console.WriteLine ($"{thirdDigitFromEnd}, {secondDigitFromEnd}, {firstDigitFromEnd}");
+//     }
+//      else if (N >9 && N <100)
+//     {
+//     Console.WriteLine ($"{secondDigitFromEnd}, {firstDigitFromEnd}");
+//     }
+//      else if (N <=9)
+//     {
+//     Console.WriteLine ($"{firstDigitFromEnd}");
+//     }
+// }
+// else 
+// {
+//     Console.WriteLine("Число не является натуральным");
+// }
 
 
 
